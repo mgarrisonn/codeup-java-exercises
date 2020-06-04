@@ -14,9 +14,9 @@ public class ControlFlowExercises {
 
        int x = 0;
        do {
-           System.out.println(x);
+           System.out.print(x + " ");
            x += 2;
-       } while (x <=100);
+       } while (x <= 100);
 
 
        int y = 100;
@@ -29,22 +29,22 @@ public class ControlFlowExercises {
        do {
            System.out.println(z);
            z *= z;
-       } while(z < 100000);
+       } while(z < 1000000);
 
        for (int j = 5; j <= 15; j++) {
-           System.out.println(j);
+           System.out.print(j + " ");
        }
 
         for (int k = 100; k >= -10; k -= 5) {
             System.out.println(k);
         }
 
-//        for (int l = 1; l <= 100; l++) {
-//            if (x % 2 == 1) {
-//                continue;
-//            }
-//            System.out.println(l);
-//        }
+        for (int l = 1; l <= 100; l++) {
+            if (l % 2 == 1) {
+                continue;
+            }
+            System.out.println(l);
+        }
 
         for (long m = 2L; m < 1000000; m*=m) {
             System.out.println(m);
@@ -57,12 +57,12 @@ public class ControlFlowExercises {
                 System.out.println("Buzz");
             } else if (p % 3 == 0){
                 System.out.println("Fizz");
-            }else {
+            } else {
                 System.out.println(p);
             }
         }
 
-        System.out.println("Enter a number: ");
+        System.out.println("What number would you like to go up to?");
         int num = sc.nextInt();
         System.out.println("Here is your table");
         System.out.println("Number    | Squared     | Cubed");
@@ -72,6 +72,34 @@ public class ControlFlowExercises {
         }
         System.out.println("------------------------------------");
 
+
+        System.out.println("Do you want to see your grades?");
+        String confirm = sc.next();
+        while (confirm.equalsIgnoreCase("Yes")) {
+            System.out.println("What was your numeric grade?");
+            int grade = sc.nextInt();
+
+            char letterGrade;
+            if (grade > 100) {
+                System.out.println("Wow! nice job!");
+                continue;
+            } else if (grade >= 99){
+                letterGrade = 'A';
+            }else if (grade >= 90) {
+                letterGrade = 'A';
+            } else if (grade >= 80) {
+                letterGrade = 'B';
+            } else if (grade >= 70) {
+                letterGrade = 'C';
+            } else if (grade >= 60) {
+                letterGrade = 'D';
+            } else {
+                letterGrade = 'F';
+            }
+            System.out.printf("You received a %c.%n", letterGrade);
+            System.out.println("Would you like to look at your letter grades?");
+            confirm = sc.next();
+        }
 
     }
 
