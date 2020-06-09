@@ -6,6 +6,12 @@ public class Student {
 //        public String name;
 //        public String cohort;
 //
+//        public Student(String name, String cohort) {
+//                    this.name = name;
+//                    this.cohort = cohort;
+//        }
+//
+//
 //        public Student(String studentName) {
 //            name = studentName;
 //            cohort = "Unassigned";
@@ -19,21 +25,21 @@ public class Student {
 
     // ======================== slide 9 (this keyword)
 
-//        public String name;
-//        public String cohort;
-//
-//        public Student(String name) {
-//            this(name, "Unassigned");
-//        }
-//
-//        public Student(String name, String cohort) {
-//            this.name = name;
-//            this.cohort = cohort;
-//        }
-//
-//        public String sayHello() {
-//            return "Hello from " + this.name + "!";
-//        }
+        public String name;
+        public String cohort;
+
+        public Student(String name) {
+            this(name, "Unassigned");
+        }
+
+        public Student(String name, String cohort) {
+            this.name = name;
+            this.cohort = cohort;
+        }
+
+        public String sayHello() {
+            return "Hello from " + this.name + "!";
+        }
 
 
     // ======================== slide 10 (visibility)

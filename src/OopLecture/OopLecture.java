@@ -1,4 +1,5 @@
 package OopLecture;
+import java.util.Date;
 
 public class OopLecture {
 
@@ -54,14 +55,14 @@ public class OopLecture {
 
         // -- OopLecture.Dog Method Example --
 
-            Dog d1 = new Dog();
-            d1.age = 3;
-            d1.breed = "corgi";
-            d1.canBreed = false;
-            d1.name = "Tater";
-
-            d1.callForDog("Tater");
-            d1.callForDog("Sparky");
+//            Dog d1 = new Dog();
+//            d1.age = 3;
+//            d1.breed = "corgi";
+//            d1.canBreed = false;
+//            d1.name = "Tater";
+//
+//            d1.callForDog("Tater");
+//            d1.callForDog("Sparky");
 
 
         // ======================== slide 5 (class fields)
@@ -73,24 +74,54 @@ public class OopLecture {
 
         // -- DogHelper Example --
 
+//             System.out.println(DogHelper.NUMBER_OF_DOG_BREEDS);
+//             System.out.println(DogHelper.APPROX_POPULATION_OF_DOGS);
+//             System.out.println(DogHelper.humanToDogYears(21));
+//             System.out.println(DogHelper.ouncesOfFoodCalculator(12));
+
 
 
 
         // ======================== slide 7 (class vs. object fields)
 
-//            OopLecture.Person theBestDrummerAlive = new OopLecture.Person();
+//            Person theBestDrummerAlive = new Person();
 //            theBestDrummerAlive.name = "Neil Peart";
-//            OopLecture.Person.worldPopulation += 1; // accessing a static property
+//            Person.worldPopulation += 1; // accessing a static property
 //
-//            System.out.println(OopLecture.Person.worldPopulation);
+//            System.out.println(Person.worldPopulation);
 //
 //            // this also works, but is usually not a good idea
 //            System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
 //            System.out.println(theBestDrummerAlive.name);
 
+//        Person person = new Person();
+//        person.name = "John Smith";
+//
+//        System.out.println(person.name);
+//
+//        Post post = new Post();
+//        post.category = "Funny";
+//        post.title = "A day in the life";
+//        post.content = "I am what i am";
+//        post.createdAt = new Date();
+//        post.editedAt = new Date();
+//        post.author = person;
+//
+//        System.out.println(post.author.name);
+
+
 
 
         // ======================== slide 8 (constructors)
+
+//        Student s = new Student();
+//        s.name = "michael garrison";
+//        s.cohort = "Ganymede";
+
+//        Student s = new Student("michael garrison", "Ganymede");
+//        System.out.println(s.name);
+//        System.out.println(s.cohort);
+
 
 //            Student jane = new Student("Jane Doe", "Zion");
 //            System.out.print(jane.name + " - ");
@@ -102,12 +133,12 @@ public class OopLecture {
 
         // ======================== slide 9 (this keyword)
 
-//            Student jane = new Student("Jane Doe", "Zion");
-//            System.out.print(jane.name + " - ");
-//            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
-//            Student john = new Student("John Doe");
-//            System.out.print(john.name + " - ");
-//            System.out.println(john.cohort); // prints "John Doe - Unassigned"
+            Student jane = new Student("Jane Doe", "Zion");
+            System.out.print(jane.name + " - ");
+            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
+            Student john = new Student("John Doe");
+            System.out.print(john.name + " - ");
+            System.out.println(john.cohort); // prints "John Doe - Unassigned"
 
 
         // ======================== slide 10 (visibility)

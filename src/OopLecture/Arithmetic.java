@@ -5,6 +5,8 @@ public class Arithmetic {
     public static final double PI = 3.14159;
 
     // static methods
+    // with static key don't have to declare an object
+    // static allows it to communicate with other classes
     public static int add(int x, int y) {
         return x + y;
     }
