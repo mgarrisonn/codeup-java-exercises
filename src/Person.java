@@ -10,10 +10,10 @@ public class Person {
         Person trey = new Person("Trey");
 
         michael.sayHello();
-        System.out.println(michael.getName() + "\n");
+//        System.out.println(michael.getName() + "\n");
 
         trey.sayHello();
-        System.out.println(trey.getName() + "\n");
+//        System.out.println(trey.getName() + "\n");
 
 
 //        Person person1 = new Person("John");
@@ -43,6 +43,6 @@ public class Person {
     }
 
     public void sayHello(){
-        System.out.println("Hello, my name is ");
+        System.out.println("Hello, my name is " + this.name);
     }
 }
