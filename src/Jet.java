@@ -29,4 +29,9 @@ public class Jet extends Vehicle {
                 "maximumAltitude=" + maximumAltitude +
                 '}';
     }
+
+    @Override
+    public void turnOn(){
+        System.out.println("Igniting jet engines...");
+    }
 }

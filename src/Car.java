@@ -29,4 +29,10 @@ public class Car extends Vehicle {
                 "milesPerGallon=" + milesPerGallon +
                 '}';
     }
+
+    @Override
+    public void turnOn(){
+        System.out.println("Cranking engine...");
+    }
+
 }
