@@ -49,7 +49,7 @@ public class Vehicle {
     }
 
     public String toString(){
-        return "Operable: " + this.isOperable + "\nCapacity" + this.passengerCapacity + "\nPower Source: " + this.powerSource;
+        return "Operable: " + this.isOperable + "\nCapacity: " + this.passengerCapacity + "\nPower Source: " + this.powerSource;
     }
 
 }
