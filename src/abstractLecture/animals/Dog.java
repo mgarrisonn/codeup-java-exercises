@@ -1,6 +1,6 @@
 package abstractLecture.animals;
 
-public class Dog extends Animal implements CanWalk, CanSwim {
+public class Dog extends Animal implements CanWalk, CanSwim, Adobtable {
 
     @Override
     public void eat() {
@@ -37,4 +37,8 @@ public class Dog extends Animal implements CanWalk, CanSwim {
         System.out.println("swimming backward");
     }
 
+    @Override
+    public void adopt() {
+        System.out.println("");
+    }
 }
