@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class GradesApplication {
 
     public static void main(String[] args) {
-        HashMap<String, Student> students = new HashMap<>()>;
+        HashMap<String, Student> students = new HashMap<>();
         Student s1 = new Student("Michael");
         s1.studentGrades(92);
         s1.studentGrades(74);
@@ -29,8 +29,28 @@ public class GradesApplication {
         students.put("Kevin123", s3);
         students.put("Trey123", s4);
 
+        System.out.println("Welcome\n\n" +
+                "Here are the GitHub usernames of our students:\n\n" +
+                "|michael123| |Jason123| |Kevin123| |Trey123|\n");
+        searchUser(students);
+    }
 
-
+    public static void searchUser(HashMap<String, Student> students){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nWhat student would you like to see more information on?\n");
+        String searchedUser = sc.nextLine();
+        if (students.containsKey(searchedUser)){
+            System.out.println("\nName: " + students.get(searchedUser).getName() +
+                    "\nCurrent Average: " + students.get(searchedUser).studentGradeAverage() + "\n");
+        } else
+            System.out.println("\nSorry, no student found with the Github username of \"" + searchedUser + "\".\n");
+        System.out.println("Would you like to see another student?\n");
+        String input = sc.next();
+        if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
+            searchUser(students);
+        } else {
+            System.out.println("\nGoodbye, and have a wonderful day!");
+        }
     }
 
 }
