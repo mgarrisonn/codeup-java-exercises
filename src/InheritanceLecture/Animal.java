@@ -4,11 +4,12 @@ public class Animal {
 
     private String species;
     private int age;
+    protected String protectedProp = "Protected prop value";
 
     //have to have an empty constructor for cat and dog
-    public Animal(){
-
-    }
+//    public Animal(){
+//
+//    }
 
     public Animal(String species, int age){
         this.species = species;

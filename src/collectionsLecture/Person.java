@@ -14,4 +14,8 @@ public class Person {
         return this.firstName;
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }

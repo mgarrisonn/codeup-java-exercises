@@ -1,9 +1,9 @@
-package OopLecture;
-import java.util.Date;
-
-public class OopLecture {
-
-    public static void main(String[] args) {
+//package OopLecture;
+//import java.util.Date;
+//
+//public class OopLecture {
+//
+//    public static void main(String[] args) {
 
         // ======================== slide 3 (classes and objects)
 //
@@ -132,13 +132,13 @@ public class OopLecture {
 
 
         // ======================== slide 9 (this keyword)
-
-            Student jane = new Student("Jane Doe", "Zion");
-            System.out.print(jane.name + " - ");
-            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
-            Student john = new Student("John Doe");
-            System.out.print(john.name + " - ");
-            System.out.println(john.cohort); // prints "John Doe - Unassigned"
+//
+//            Student jane = new Student("Jane Doe", "Zion");
+//            System.out.print(jane.name + " - ");
+//            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
+//            Student john = new Student("John Doe");
+//            System.out.print(john.name + " - ");
+//            System.out.println(john.cohort); // prints "John Doe - Unassigned"
 
 
         // ======================== slide 10 (visibility)
@@ -150,6 +150,6 @@ public class OopLecture {
 //            System.out.println(student.shareGrade()); // Do this instead
 
 
-    }
-
-}
+//    }
+//
+//}
