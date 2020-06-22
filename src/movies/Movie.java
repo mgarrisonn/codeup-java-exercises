@@ -5,7 +5,7 @@ public class Movie {
     private String category;
 
 
-    public static void main(String name, String category) {
+    public Movie(String name, String category) {
         this.name = name;
         this.category = category;
     }
